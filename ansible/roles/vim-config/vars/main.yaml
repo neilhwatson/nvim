@@ -1,1 +1,9 @@
 HOME: "{{ ansible_env.HOME }}"
+blank_dirs:
+    - autoload
+    - swap
+    - undo
+link_dirs:
+    - doc
+    - ftplugin
+    - plugin

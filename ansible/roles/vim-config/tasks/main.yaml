@@ -1,7 +1,11 @@
 - name: vim autoload dir
   file:
-    path: "{{ HOME }}/.vim/autoload"
+    path: "{{ HOME }}/.vim/{{ item }}"
     state: directory
+  loop:
+    - autoload
+    - swap
+    - undo
 
 - name: vimplug
   get_url:
@@ -18,8 +22,6 @@
     - doc
     - ftplugin
     - plugin
-    - swap
-    - undo
 
 - name: vim rc files
   file:

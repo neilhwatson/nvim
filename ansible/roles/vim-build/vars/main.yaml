@@ -1,0 +1,2 @@
+vim_version: v8.2.0905
+HOME: "{{ ansible_env.HOME }}"

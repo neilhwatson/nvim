@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+
+  roles:
+    - vim-build
+    - vim-config

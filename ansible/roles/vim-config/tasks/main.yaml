@@ -1,0 +1,34 @@
+- name: vim autoload dir
+  file:
+    path: "{{ HOME }}/.vim/autoload"
+    state: directory
+
+- name: vimplug
+  get_url:
+    url: https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    dest: "{{ HOME }}/.vim/autoload/plug.vim"
+
+
+- name: vim dirs
+  file:
+    dest: "{{ HOME }}/.vim/{{ item }}"
+    src: "{{ HOME }}/src/neil/nvim/dot-vim/{{ item }}"
+    state: link
+  loop:
+    - doc
+    - ftplugin
+    - plugin
+    - swap
+    - undo
+
+- name: vim rc files
+  file:
+    dest: "{{ HOME }}/.{{ item }}imrc"
+    src: "{{ HOME }}/src/neil/nvim/dot-{{ item }}imrc"
+    state: link
+  loop:
+    - v
+    - gv
+
+- name: install plugins with vim-plug
+  shell: vim -c PlugUpdate -c qa > /dev/null

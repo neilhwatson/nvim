@@ -16,7 +16,7 @@
 - name: vim dirs
   file:
     dest: "{{ HOME }}/.vim/{{ item }}"
-    src: "{{ HOME }}/src/neil/nvim/dot-vim/{{ item }}"
+    src: "{{ playbook_dir }}/../dot-vim/{{ item }}"
     state: link
   loop:
     - doc
@@ -26,7 +26,7 @@
 - name: vim rc files
   file:
     dest: "{{ HOME }}/.{{ item }}imrc"
-    src: "{{ HOME }}/src/neil/nvim/dot-{{ item }}imrc"
+    src: "{{ playbook_dir }}/../dot-{{ item }}imrc"
     state: link
   loop:
     - v

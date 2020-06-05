@@ -2,5 +2,9 @@
 - hosts: localhost
 
   roles:
-    - vim-build
-    - vim-config
+    - role: vim-build
+      tags:
+        - build
+    - role: vim-config
+      tags:
+        - config

@@ -63,6 +63,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-fish --no-zs
 Plug 'junegunn/fzf.vim'
 Plug 'drmikehenry/vim-fontsize'
 Plug '0x0dea/vim-molasses'
+Plug 'ron89/thesaurus_query.vim'
 
 call plug#end()
 " Install with:

@@ -5,5 +5,5 @@ set guioptions-=m
 
 source $MYVIMRC
 
-" ctrl-z opens the terminal like vim from a terminal
-nnoremap <C-z> :terminal<CR>
+" ctrl-z writes buffers opens the terminal like vim from a terminal
+nnoremap <C-z> :wall <Bar> terminal<CR>

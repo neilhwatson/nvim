@@ -220,7 +220,7 @@ nnoremap <leader>fh/ :History/<CR>
 " nnoremap ; :CtrlPBuffer<CR>
 " nnoremap ; :Buffers<CR>
 " nnoremap <C-P> :Files<CR>
-let g:fzf_layout = { 'left': '~80%' }
+let g:fzf_layout = { 'right': '~80%' }
 
 " Window control
 nnoremap <leader>w <C-w>

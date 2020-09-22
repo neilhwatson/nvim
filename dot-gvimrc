@@ -1,4 +1,4 @@
-set guifont=Liberation\ Mono\ 12
+set guifont=Liberation\ Mono\ 14
 set guioptions-=Rm
 set guioptions-=T
 set guioptions-=m

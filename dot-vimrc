@@ -44,7 +44,7 @@ set colorcolumn=78
 set wildmenu
 " for fancy status line plugins
 set laststatus=2
-set termwinsize=0*80
+set termwinsize=0*120
 
 let mapleader = "s"
 

@@ -43,7 +43,7 @@
     chdir: "{{ HOME }}/src/vim"
     target: distclean
     params:
-      NUM_THREADS: 2
+      NUM_THREADS: 3
 
 - name: configure
   shell:
@@ -62,14 +62,14 @@
   make:
     chdir: "{{ HOME }}/src/vim"
     params:
-      NUM_THREADS: 2
+      NUM_THREADS: 3
 
 - name: Make test vim
   make:
     chdir: "{{ HOME }}/src/vim"
     target: test
     params:
-      NUM_THREADS: 2
+      NUM_THREADS: 3
 
 - name: Make install vim
   make:

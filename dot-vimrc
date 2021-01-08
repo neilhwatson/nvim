@@ -220,14 +220,15 @@ nnoremap <leader>fl :BLines<CR>
 nnoremap <leader>fh :History<CR>
 nnoremap <leader>fh: :History:<CR>
 nnoremap <leader>fh/ :History/<CR>
+nnoremap <C-x><C-l> <plug>(fzf-complete-line)
+nnoremap <c-x><c-f> <plug>(fzf-complete-path)
+nnoremap <c-x><c-k> <plug>(fzf-complete-word)
 "
 " buffer control using CtrlP plugin
 " nnoremap ; :CtrlPBuffer<CR>
 " nnoremap ; :Buffers<CR>
 " nnoremap <C-P> :Files<CR>
 let g:fzf_layout = { 'right': '~80%' }
-" Replace vim line completion with fzf
-imap <C-x><C-l> <plug>(fzf-complete-line)
 
 " Window control
 nnoremap <leader>w <C-w>

@@ -220,9 +220,9 @@ nnoremap <leader>fl :BLines<CR>
 nnoremap <leader>fh :History<CR>
 nnoremap <leader>fh: :History:<CR>
 nnoremap <leader>fh/ :History/<CR>
-nnoremap <C-x><C-l> <plug>(fzf-complete-line)
-nnoremap <c-x><c-f> <plug>(fzf-complete-path)
-nnoremap <c-x><c-k> <plug>(fzf-complete-word)
+imap <C-x><C-l> <plug>(fzf-complete-line)
+imap <c-x><c-f> <plug>(fzf-complete-path)
+imap <c-x><c-k> <plug>(fzf-complete-word)
 "
 " buffer control using CtrlP plugin
 " nnoremap ; :CtrlPBuffer<CR>

@@ -226,6 +226,8 @@ nnoremap <leader>fh/ :History/<CR>
 " nnoremap ; :Buffers<CR>
 " nnoremap <C-P> :Files<CR>
 let g:fzf_layout = { 'right': '~80%' }
+" Replace vim line completion with fzf
+imap <C-x><C-l> <plug>(fzf-complete-line)
 
 " Window control
 nnoremap <leader>w <C-w>

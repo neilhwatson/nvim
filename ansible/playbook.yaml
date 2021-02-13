@@ -2,7 +2,7 @@
 - hosts: localhost
 
   vars:
-    vim_version: v8.2.2286
+    vim_version: v8.2.2505
     HOME: "{{ ansible_env.HOME }}"
 
   roles:

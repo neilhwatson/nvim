@@ -176,6 +176,11 @@ endfunction
 endif
 
 "
+" Skeletons
+"
+" autocmd BufNewFile foo.sh 0r ~/Foo.sh
+
+"
 " My maps
 "
 augroup Java

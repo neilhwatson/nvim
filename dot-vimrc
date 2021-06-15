@@ -197,6 +197,11 @@ augroup Java
       \ !boxes -r -d java-cmt<CR>
 augroup END
 
+augroup markdown
+   autocmd!
+   autocmd Filetype markdown let g:markdown_fenced_languages = [ 'bash', 'javascript' ]
+augroup END
+
 augroup Shell
    autocmd!
    " Box comments

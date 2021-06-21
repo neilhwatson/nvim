@@ -226,6 +226,7 @@ autocmd FileType help wincmd L
 " FZF maps
 nnoremap <leader>fb :Buffers<CR>
 nnoremap <leader>ff :Files<CR>
+nnoremap <leader>fg :GFiles<CR>
 nnoremap <leader>fl :BLines<CR>
 nnoremap <leader>fh :History<CR>
 nnoremap <leader>fh: :History:<CR>

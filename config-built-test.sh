@@ -4,8 +4,10 @@ set -e
 
 {
    cd ~/src/vim
+   git switch master
    git reset --hard HEAD
-   # git checkout v8.2.2976
+   git pull
+   git checkout v8.2.3081
    # v8.2.2600 93e1cae73
    # v8.2.2976 8de901e1f
 

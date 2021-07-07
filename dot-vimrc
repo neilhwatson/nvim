@@ -231,6 +231,7 @@ nnoremap <leader>fl :BLines<CR>
 nnoremap <leader>fh :History<CR>
 nnoremap <leader>fh: :History:<CR>
 nnoremap <leader>fh/ :History/<CR>
+nnoremap <leader>fm :Marks<CR>
 inoremap <c-x><c-f> <plug>(fzf-complete-path)
 " line completiong from open buffers
 inoremap <C-x><C-l> <plug>(fzf-complete-line)

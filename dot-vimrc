@@ -234,14 +234,14 @@ nnoremap <leader>fh/ :History/<CR>
 nnoremap <leader>fm :Marks<CR>
 inoremap <c-x><c-f> <plug>(fzf-complete-path)
 " line completiong from open buffers
-inoremap <C-x><C-l> <plug>(fzf-complete-line)
+imap <C-x><C-l> <plug>(fzf-complete-line)
 " Global line completion (not just open buffers. ripgrep required.)
-inoremap <expr> <c-x><c-j> fzf#vim#complete(fzf#wrap({
+imap <expr> <c-x><c-j> fzf#vim#complete(fzf#wrap({
   \ 'prefix': '^.*$',
   \ 'source': 'rg -n ^ --color always',
   \ 'options': '--ansi --delimiter : --nth 3..',
   \ 'reducer': { lines -> join(split(lines[0], ':\zs')[2:], '') }}))
-inoremap <c-x><c-k> <plug>(fzf-complete-word)
+imap <c-x><c-k> <plug>(fzf-complete-word)
 "
 " buffer control using CtrlP plugin
 " nnoremap ; :CtrlPBuffer<CR>

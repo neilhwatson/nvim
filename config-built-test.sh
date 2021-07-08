@@ -4,6 +4,7 @@ set -e
 
 {
    cd ~/src/vim
+   git reset --hard HEAD
    git switch master
    git reset --hard HEAD
    git pull

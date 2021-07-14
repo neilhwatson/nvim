@@ -67,6 +67,7 @@ Plug 'drmikehenry/vim-fontsize'
 Plug '0x0dea/vim-molasses'
 Plug 'ron89/thesaurus_query.vim'
 Plug 'tpope/vim-vividchalk'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 " Install with:

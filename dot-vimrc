@@ -243,13 +243,11 @@ imap <expr> <c-x><c-j> fzf#vim#complete(fzf#wrap({
   \ 'options': '--ansi --delimiter : --nth 3..',
   \ 'reducer': { lines -> join(split(lines[0], ':\zs')[2:], '') }}))
 imap <c-x><c-k> <plug>(fzf-complete-word)
-"
-" buffer control using CtrlP plugin
-" nnoremap ; :CtrlPBuffer<CR>
-" nnoremap ; :Buffers<CR>
-" nnoremap <C-P> :Files<CR>
 let g:fzf_layout = { 'right': '~80%' }
 
+" Ale maps
+nmap <silent> <c-k> <Plug>(ale_previous_wrap)
+nmap <silent> <c-j> <Plug>(ale_next_wrap)
 " Window control
 nnoremap <leader>w <C-w>
 

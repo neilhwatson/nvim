@@ -3,12 +3,14 @@
 set -e
 
 {
+   export TEST_MAY_FAIL=Test_geometry
    cd ~/src/vim
    git reset --hard HEAD
    git switch master
    git reset --hard HEAD
    git pull
-   git checkout v8.2.3081
+   git checkout v8.2.3206
+   # git checkout v8.2.3081
    # v8.2.2600 93e1cae73
    # v8.2.2976 8de901e1f
 

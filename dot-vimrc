@@ -55,6 +55,7 @@ let mapleader = "s"
 "
 call plug#begin('~/.vim/plugged')
 
+Plug 'psliwka/vim-smoothie'
 Plug 'itchyny/lightline.vim'
 Plug 'w0rp/ale'
 Plug 'godlygeek/tabular'

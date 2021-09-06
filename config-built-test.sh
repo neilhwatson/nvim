@@ -9,10 +9,8 @@ set -e
    git switch master
    git reset --hard HEAD
    git pull
-   git checkout v8.2.3206
-   # git checkout v8.2.3081
-   # v8.2.2600 93e1cae73
-   # v8.2.2976 8de901e1f
+   git checkout v8.2.3408
+   # git checkout v8.2.3206
 
    ./configure \
       --enable-rubyinterp=yes \

@@ -84,8 +84,8 @@ try
    colorscheme vividchalk
 catch /^Vim\%((\a\+)\)\=:E185/
    colorscheme default
-   set background=dark
 endtry
+set background=dark
 
 "for scp
 "set nocp

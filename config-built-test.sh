@@ -9,7 +9,7 @@ set -e
    git switch master
    git reset --hard HEAD
    git pull
-   git checkout v8.2.3408
+   git checkout v8.2.3559
    # git checkout v8.2.3206
 
    ./configure \

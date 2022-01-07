@@ -206,14 +206,14 @@ augroup END
 augroup Shell
    autocmd!
    " Box comments
-   autocmd Filetype text,yaml,sh,shell,markdown nnoremap <buffer> 
+   autocmd Filetype ansible,text,yaml,sh,shell,markdown nnoremap <buffer> 
       \ <leader>mc !!boxes -d shell<CR>
-   autocmd Filetype text,yaml,sh,shell,markdown vnoremap <buffer> 
+   autocmd Filetype ansible,text,yaml,sh,shell,markdown vnoremap <buffer> 
       \ <leader>mc !boxes -d shell<CR>
    " Remove comments
-   autocmd Filetype text,yaml,sh,shell,markdown nnoremap <buffer> 
+   autocmd Filetype ansible,text,yaml,sh,shell,markdown nnoremap <buffer> 
       \ <leader>xc !!boxes -r -d shell<CR>
-   autocmd Filetype text,yaml,sh,shell,markdown vnoremap <buffer>
+   autocmd Filetype ansible,text,yaml,sh,shell,markdown vnoremap <buffer>
       \  <leader>xc !boxes -r -d shell<CR>
 augroup END
 

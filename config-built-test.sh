@@ -10,6 +10,7 @@ set -e
    git reset --hard HEAD
    git pull
    git checkout v8.2.4035
+   make clean
 
    ./configure \
       --enable-rubyinterp=yes \

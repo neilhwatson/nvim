@@ -1,0 +1,11 @@
+- name:
+  hosts:
+  user:
+
+  vars:
+
+  pre_tasks:
+
+  tasks:
+
+  post_tasks:

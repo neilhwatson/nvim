@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e
 
@@ -9,8 +9,7 @@ set -e
    git switch master
    git reset --hard HEAD
    git pull
-   git checkout v8.2.4035
-   make clean
+   git checkout v8.2.4341
 
    ./configure \
       --enable-rubyinterp=yes \
@@ -23,5 +22,5 @@ set -e
 
    make -j3
    make test
-   echo make install
+   make install
 }

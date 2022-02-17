@@ -181,7 +181,7 @@ endif
 "
 " autocmd BufNewFile foo.sh 0r ~/Foo.sh
 autocmd BufNewFile *.sh 0r ~/.vim/skeletons/bash.sh
-autocmd BufNewFile *.yaml 0r ~/.vim/skeletons/ansible.yaml
+autocmd BufNewFile *playbook* 0r ~/.vim/skeletons/ansible.yaml
 
 " My maps
 "

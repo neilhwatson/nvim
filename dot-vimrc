@@ -47,6 +47,7 @@ set laststatus=2
 set termwinsize=0*120
 set termguicolors
 set scrolloff=999
+set omnifunc=syntaxcomplete#Complete
 
 let mapleader = "s"
 

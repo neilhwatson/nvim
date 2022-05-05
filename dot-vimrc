@@ -47,6 +47,8 @@ set laststatus=2
 set termwinsize=0*120
 set termguicolors
 set scrolloff=999
+set splitright
+set splitbelow
 
 let mapleader = "s"
 

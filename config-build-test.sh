@@ -21,7 +21,7 @@ set -e
       --enable-cscope \
       --prefix=$HOME
 
-   make -j3
+   make -j4
    make test
    make install
 }

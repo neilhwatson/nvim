@@ -72,6 +72,7 @@ Plug 'drmikehenry/vim-fontsize'
 Plug 'ron89/thesaurus_query.vim'
 Plug 'tpope/vim-vividchalk'
 Plug 'sheerun/vim-polyglot'
+Plug 'github/copilot.vim'
 
 call plug#end()
 " Install with:

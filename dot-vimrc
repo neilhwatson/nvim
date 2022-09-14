@@ -223,6 +223,10 @@ augroup Shell
       \  <leader>xc !boxes -r -d shell<CR>
 augroup END
 
+augroup NoCopilot
+   autocmd!
+   autocmd Filetype text,mail,markdown :Copilot disable
+augroup END
 
 " update file
 nnoremap <leader>u :update<CR>

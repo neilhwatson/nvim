@@ -10,7 +10,7 @@ set -e
    git switch master
    git reset --hard HEAD
    git pull
-   git checkout v9.0.0814
+   git checkout v9.0.1103
 
    ./configure \
       --enable-rubyinterp=yes \

@@ -44,7 +44,7 @@ set colorcolumn=78
 set wildmenu
 " for fancy status line plugins
 set laststatus=2
-set termwinsize=0*120
+" set termwinsize=0*120
 set termguicolors
 set scrolloff=999
 set splitright
@@ -73,6 +73,8 @@ Plug 'ron89/thesaurus_query.vim'
 Plug 'tpope/vim-vividchalk'
 Plug 'sheerun/vim-polyglot'
 Plug 'github/copilot.vim'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-orgmode/orgmode'
 
 call plug#end()
 " Install with:
@@ -204,6 +206,11 @@ augroup Java
       \ !boxes -r -d java-cmt<CR>
 augroup END
 
+"augroup Org
+"   autocmd!
+"   autocmd Filetype org set nomodeline
+"augroup END
+
 augroup markdown
    autocmd!
    autocmd Filetype markdown let g:markdown_fenced_languages = [ 'bash', 'javascript', 'groovy', 'jenkinsfile', 'yaml', 'ansible' ]
@@ -225,7 +232,7 @@ augroup END
 
 augroup NoCopilot
    autocmd!
-   autocmd Filetype text,mail,markdown :Copilot disable
+   autocmd Filetype text,mail,markdown,org :Copilot disable
 augroup END
 
 " update file

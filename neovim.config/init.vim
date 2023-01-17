@@ -20,17 +20,17 @@ require('nvim-treesitter.configs').setup {
     -- code block highlights that do not have ts grammar
     additional_vim_regex_highlighting = {'org'},
   },
-  ensure_installed = {'org'}, -- Or run :TSUpdate org
+  ensure_installed = {'org', 'vim'}, -- Or run :TSUpdate org
 }
 
 require('orgmode').setup({
-  org_agenda_files = {'~/calendar/aiven.org'},
+  org_agenda_files = {'~/calendar/aiven.org', '~/calendar/nhw.org'},
   -- org_default_notes_file = '~/Dropbox/org/refile.org',
   notifications = {
     enabled = false,
     cron_enabled = true,
-    repeater_reminder_time = false,
-    deadline_warning_reminder_time = false,
+    repeater_reminder_time = true,
+    deadline_warning_reminder_time = true,
     reminder_time = 10,
     deadline_reminder = true,
     scheduled_reminder = true,

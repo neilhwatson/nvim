@@ -20,14 +20,14 @@ require('nvim-treesitter.configs').setup {
     -- code block highlights that do not have ts grammar
     additional_vim_regex_highlighting = {'org'},
   },
-  ensure_installed = {'org', 'vim'}, -- Or run :TSUpdate org
+  ensure_installed = {'org', 'vim', 'lua'}, -- Or run :TSUpdate org
 }
 
 require('orgmode').setup({
   org_agenda_files = {'~/calendar/aiven.org', '~/calendar/nhw.org'},
   -- org_default_notes_file = '~/Dropbox/org/refile.org',
   notifications = {
-    enabled = false,
+    enabled = true,
     cron_enabled = true,
     repeater_reminder_time = true,
     deadline_warning_reminder_time = true,
@@ -58,6 +58,8 @@ require('orgmode').setup({
         if vim.fn.executable('notify-send') == 1 then
           vim.loop.spawn('notify-send', { args = { string.format('%s\n%s\n%s', title, subtitle, date) }})
         end
+-- for cron:
+ -- * * * * * DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus /home/neil/bin/nvim --headless --noplugin -c 'lua require("orgmode").cron()'
 
         -- MacOS
         if vim.fn.executable('terminal-notifier') == 1 then

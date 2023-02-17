@@ -8,10 +8,12 @@ set -e
    git switch master
    git reset --hard HEAD
    git pull
-   git checkout stable
+   # git checkout stable
+   make distclean
+   make deps
    make CMAKE_BUILD_TYPE=Release
    # make functionaltest
-   make CMAKE_INSTALL_PREFIX="$HOME/local/nvim" install
+   make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX="$HOME/local/nvim" install
 
    # can unsinstall with:
    # cmake --build build/ --target uninstall

@@ -25,8 +25,6 @@ require('nvim-treesitter.configs').setup {
     'diff',
     'git_rebase',
     'gitcommit',
-    'gitconfig',
-    'gitignore',
     'help',
     'html',
     'json',

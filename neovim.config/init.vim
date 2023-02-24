@@ -26,7 +26,7 @@ require('nvim-treesitter.configs').setup {
     'git_rebase',
     'gitcommit',
 --    'gitconfig', -- not avialable in nvim 8
-    'gitignore',
+--    'gitignore',
     'help',
     'html',
     'json',

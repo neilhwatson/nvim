@@ -111,7 +111,7 @@ iab ymd  <c-r>=strftime("%Y%m%d")<cr>
 "02:32:22
 iab hms  <c-r>=strftime("%H:%M:%S")<cr> 
 "Day-of-week, Month, Day, Year
-iab cdate <c-r>=strftime("+%a %b %d %Y")<cr>
+iab cdate <c-r>=strftime("%a %b %d %Y")<cr>
 
 " misc abbs
 iab CFE CFEngine

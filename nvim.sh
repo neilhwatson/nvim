@@ -27,5 +27,5 @@ set -e
       ln -s ~/src/neil/nvim/neovim.config/init.vim ~/.config/nvim/init.vim
    fi
    ~/bin/nvim --version
-   ~/bin/nvim -c 'PlugUpgrade' -c 'PlugInstall' -c 'qa!'
+   ~/bin/nvim -c 'PlugUpgrade' -c 'PlugInstall' -c 'PlugUpdate' -c 'TSUpdate' -c 'qa!'
 }

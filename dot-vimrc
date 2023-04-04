@@ -31,6 +31,7 @@ set shiftwidth=3
 set shiftround
 set expandtab
 set modeline
+set mouse= " disable because nvim steals from terminal
 set autoindent
 set undolevels=100
 set undofile

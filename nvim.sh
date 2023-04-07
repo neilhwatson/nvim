@@ -5,7 +5,8 @@ set -e
 {
    cd ~/src/neovim
    git reset --hard HEAD
-   git switch master
+   git pull
+   git switch release-0.9
    git reset --hard HEAD
    git pull
    # git checkout stable

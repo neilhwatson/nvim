@@ -4,12 +4,10 @@ set -e
 
 {
    cd ~/src/neovim
+   git switch master
    git reset --hard HEAD
    git pull
-   git switch release-0.9
-   git reset --hard HEAD
-   git pull
-   # git checkout stable
+   git checkout v0.9.1
    make distclean
    make deps
    make CMAKE_BUILD_TYPE=Release

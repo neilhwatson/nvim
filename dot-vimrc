@@ -76,6 +76,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'github/copilot.vim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-orgmode/orgmode'
+Plug 'lucasprag/simpleblack'
 
 if filereadable(expand("~/node-v16.18.0-linux-x64/bin/node"))
    let g:copilot_node_command = "~/node-v16.18.0-linux-x64/bin/node"
@@ -93,7 +94,8 @@ call plug#end()
 set autowrite
 
 try
-   colorscheme vividchalk
+   colorscheme simpleblack
+   " colorscheme vividchalk
 catch /^Vim\%((\a\+)\)\=:E185/
    colorscheme default
 endtry

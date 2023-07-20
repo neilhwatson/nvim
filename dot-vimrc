@@ -101,6 +101,8 @@ catch /^Vim\%((\a\+)\)\=:E185/
 endtry
 set background=dark
 
+highlight LineNr guifg=Lightgray guibg=Black
+
 "for scp
 "set nocp
 let g:netrw_silent=1

@@ -157,13 +157,6 @@ autocmd BufNewFile *.sh 0r ~/.vim/skeletons/bash.sh
 autocmd BufNewFile *playbook* 0r ~/.vim/skeletons/ansible.yaml
 
 "
-" Terraform
-"
-let g:terraform_fmt_on_save=1
-let g:terraform_align=1
-let g:hcl_align=1
-
-"
 " My maps
 "
 augroup Java

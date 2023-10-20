@@ -180,7 +180,7 @@ augroup END
 
 augroup markdown
    autocmd!
-   autocmd Filetype markdown let g:markdown_fenced_languages = [ 'bash', 'javascript', 'groovy', 'jenkinsfile', 'yaml', 'ansible' ]
+   autocmd Filetype markdown let g:markdown_fenced_languages = [ 'bash', 'sql', 'javascript', 'groovy', 'jenkinsfile', 'yaml', 'ansible' ]
 augroup END
 
 augroup Shell

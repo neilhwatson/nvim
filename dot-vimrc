@@ -199,7 +199,7 @@ augroup END
 
 augroup NoCopilot
    autocmd!
-   autocmd Filetype text,mail,markdown,org :Copilot disable
+   autocmd Filetype text,mail,markdown,org Copilot disable
 augroup END
 
 " update file

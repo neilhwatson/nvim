@@ -28,7 +28,6 @@ require('nvim-treesitter.configs').setup {
     'git_config',
     'git_rebase',
     'gitignore',
-    'help',
     'html',
     'json',
     'lua',
@@ -39,6 +38,7 @@ require('nvim-treesitter.configs').setup {
     'terraform',
     'toml',
     'vim',
+    'vimdoc',
     'yaml',
   },
     -- Or run :TSUpdate org

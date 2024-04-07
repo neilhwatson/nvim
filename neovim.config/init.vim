@@ -8,7 +8,6 @@ lua << EOF
 -- init.lua
 
 -- Load custom treesitter grammar for org filetype
-require('orgmode').setup_ts_grammar()
 
 -- Treesitter configuration
 require('nvim-treesitter.configs').setup {

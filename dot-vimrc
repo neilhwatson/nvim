@@ -73,14 +73,9 @@ Plug 'drmikehenry/vim-fontsize'
 Plug 'ron89/thesaurus_query.vim'
 Plug 'tpope/vim-vividchalk'
 Plug 'sheerun/vim-polyglot'
-Plug 'github/copilot.vim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-orgmode/orgmode'
 Plug 'lucasprag/simpleblack'
-
-if filereadable(expand("~/node-v16.18.0-linux-x64/bin/node"))
-   let g:copilot_node_command = "~/node-v16.18.0-linux-x64/bin/node"
-endif
 
 call plug#end()
 " Install with:
@@ -195,11 +190,6 @@ augroup Shell
       \ <leader>xc !!boxes -r -d shell<CR>
    autocmd Filetype ansible,text,yaml,sh,shell,markdown vnoremap <buffer>
       \  <leader>xc !boxes -r -d shell<CR>
-augroup END
-
-augroup NoCopilot
-   autocmd!
-   autocmd Filetype text,mail,markdown,org Copilot disable
 augroup END
 
 " update file

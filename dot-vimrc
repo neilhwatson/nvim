@@ -73,8 +73,7 @@ Plug 'drmikehenry/vim-fontsize'
 Plug 'ron89/thesaurus_query.vim'
 Plug 'tpope/vim-vividchalk'
 Plug 'sheerun/vim-polyglot'
-Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'nvim-orgmode/orgmode'
+" Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'lucasprag/simpleblack'
 
 call plug#end()

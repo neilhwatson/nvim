@@ -7,7 +7,7 @@ set -e
    git switch master
    git reset --hard HEAD
    git pull
-   git checkout v0.10.4
+   git checkout v0.11.0
    make distclean
    make deps
    make CMAKE_BUILD_TYPE=Release

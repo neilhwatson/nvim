@@ -72,10 +72,11 @@ Plug 'junegunn/fzf.vim'
 Plug 'drmikehenry/vim-fontsize'
 Plug 'ron89/thesaurus_query.vim'
 Plug 'preservim/vim-markdown'
-" Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 " colors
 Plug 'tpope/vim-vividchalk'
-Plug 'sjl/badwolf'
+" Plug 'sjl/badwolf'
+" Plug 'altercation/vim-colors-solarized'
 
 
 call plug#end()
@@ -91,15 +92,16 @@ set autowrite
 
 set termguicolors
 try
-   " colorscheme vividchalk
-   colorscheme badwolf
+   colorscheme vividchalk
+   " colorscheme solarized
+   " colorscheme badwolf
 catch /^Vim\%((\a\+)\)\=:E185/
    colorscheme default
 endtry
 " make background blad to override colorscheme settings
 set background=dark
-highlight Normal guibg=black guifg=white
-highlight LineNr guifg=Lightgray guibg=Black
+" highlight Normal guibg=black guifg=white
+" highlight LineNr guifg=Lightgray guibg=Black
 
 
 "for scp

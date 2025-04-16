@@ -46,7 +46,6 @@ set wildmenu
 " for fancy status line plugins
 set laststatus=2
 " set termwinsize=0*120
-set termguicolors
 set scrolloff=999
 set splitright
 set splitbelow
@@ -75,8 +74,8 @@ Plug 'preservim/vim-markdown'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 " colors
 Plug 'tpope/vim-vividchalk'
-" Plug 'sjl/badwolf'
-" Plug 'altercation/vim-colors-solarized'
+Plug 'sjl/badwolf'
+Plug 'lifepillar/vim-solarized8'
 
 
 call plug#end()
@@ -90,16 +89,17 @@ call plug#end()
 " autowrite buffer on suspend, buffer switch etc...
 set autowrite
 
-set termguicolors
+" make background blad to override colorscheme settings
+set background=dark
 try
-   colorscheme vividchalk
-   " colorscheme solarized
+   " colorscheme vividchalk
+   colorscheme solarized8
    " colorscheme badwolf
 catch /^Vim\%((\a\+)\)\=:E185/
    colorscheme default
 endtry
-" make background blad to override colorscheme settings
-set background=dark
+set termguicolors
+syntax enable
 " highlight Normal guibg=black guifg=white
 " highlight LineNr guifg=Lightgray guibg=Black
 

@@ -74,8 +74,8 @@ Plug 'preservim/vim-markdown'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 " colors
 Plug 'tpope/vim-vividchalk'
-Plug 'sjl/badwolf'
 Plug 'lifepillar/vim-solarized8'
+Plug 'morhetz/gruvbox'
 
 
 call plug#end()
@@ -93,7 +93,8 @@ set autowrite
 set background=dark
 try
    " colorscheme vividchalk
-   colorscheme solarized8
+   colorscheme gruvbox
+   " colorscheme solarized8
    " colorscheme badwolf
 catch /^Vim\%((\a\+)\)\=:E185/
    colorscheme default

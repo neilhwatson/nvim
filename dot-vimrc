@@ -92,6 +92,7 @@ set autowrite
 " make background blad to override colorscheme settings
 set background=dark
 let g:gruvbox_italic=1
+" let g:solarized8_italic=1
 try
    " colorscheme vividchalk
    colorscheme gruvbox

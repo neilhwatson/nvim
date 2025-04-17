@@ -76,6 +76,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend upda
 Plug 'tpope/vim-vividchalk'
 Plug 'lifepillar/vim-solarized8'
 Plug 'morhetz/gruvbox'
+Plug 'ayu-theme/ayu-vim' 
 
 
 call plug#end()
@@ -95,7 +96,9 @@ let g:gruvbox_italic=1
 " let g:solarized8_italic=1
 try
    " colorscheme vividchalk
-   colorscheme gruvbox
+   " colorscheme gruvbox
+   let ayucolor="dark"
+   colorscheme ayu
    " colorscheme solarized8
    " colorscheme badwolf
 catch /^Vim\%((\a\+)\)\=:E185/

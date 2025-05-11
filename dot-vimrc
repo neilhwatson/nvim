@@ -58,20 +58,20 @@ let mapleader = "s"
 "
 call plug#begin('~/.vim/plugged')
 
-Plug 'stephpy/vim-yaml'
+" Plug 'stephpy/vim-yaml'
 Plug 'psliwka/vim-smoothie'
 Plug 'itchyny/lightline.vim'
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-surround'
-Plug 'hashivim/vim-terraform'
+" Plug 'tpope/vim-surround'
+" Plug 'hashivim/vim-terraform'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --no-fish --no-zsh' }
 Plug 'junegunn/fzf.vim'
-Plug 'drmikehenry/vim-fontsize'
+" Plug 'drmikehenry/vim-fontsize'
 Plug 'ron89/thesaurus_query.vim'
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 " colors
 Plug 'tpope/vim-vividchalk'
 Plug 'lifepillar/vim-solarized8'
@@ -97,8 +97,9 @@ let g:gruvbox_italic=1
 try
    " colorscheme vividchalk
    " colorscheme gruvbox
-   let ayucolor="dark"
-   colorscheme ayu
+   " let ayucolor="dark"
+   " colorscheme ayu
+   colorscheme retrobox
    " colorscheme solarized8
    " colorscheme badwolf
 catch /^Vim\%((\a\+)\)\=:E185/

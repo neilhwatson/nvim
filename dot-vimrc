@@ -77,6 +77,8 @@ Plug 'preservim/vim-markdown'
 Plug 'tpope/vim-vividchalk'
 " Plug 'lifepillar/vim-solarized8'
 " Plug 'morhetz/gruvbox'
+" Plug 'flazz/vim-colorschemes'
+" see https://vimcolorschemes.com/flazz/vim-colorschemes
 " Plug 'ayu-theme/ayu-vim' 
 
 
@@ -110,7 +112,7 @@ catch /^Vim\%((\a\+)\)\=:E185/
 endtry
 set termguicolors
 syntax enable
-highlight htmlItalic gui=italic guifg=#ff8700 ctermfg=green
+highlight htmlItalic gui=italic guifg=green ctermfg=green
 " highlight Normal guibg=black guifg=white
 " highlight LineNr guifg=Lightgray guibg=Black
 

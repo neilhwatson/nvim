@@ -1,4 +1,4 @@
-set guifont=Fira\ Code\ 18
+set guifont=Fira\ Code\ 12
 "set guifont=Liberation\ Mono\ 14
 set guioptions-=Rm
 set guioptions-=T
@@ -8,3 +8,5 @@ source $MYVIMRC
 
 " ctrl-z writes buffers opens the terminal like vim from a terminal
 nnoremap <C-z> :wall <Bar> vertical terminal<CR>
+
+colorscheme ayu

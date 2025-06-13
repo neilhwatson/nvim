@@ -108,7 +108,7 @@ try
 catch /^Vim\%((\a\+)\)\=:E185/
    colorscheme default
 endtry
-" set termguicolors
+set termguicolors
 syntax enable
 highlight htmlItalic gui=italic guifg=#ff8700 ctermfg=green
 " highlight Normal guibg=black guifg=white

@@ -74,6 +74,7 @@ Plug 'ron89/thesaurus_query.vim'
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
 Plug 'preservim/vim-colors-pencil'
+Plug 'drewtempelmeyer/palenight.vim'
 " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 " colors
 Plug 'tpope/vim-vividchalk'
@@ -101,7 +102,13 @@ set background=dark
 " let g:solarized8_italic=1
 " let g:github_colors_soft=1
 " let g:rehash256 = 1
-let g:pencil_terminal_italics = 1
+" let g:pencil_terminal_italics = 1
+let g:lightline = { 'colorscheme': 'palenight' }
+let g:palenight_terminal_italics=1
+let g:palenight_color_overrides = {
+\    'black': { 'gui': '#000000', "cterm": "0", "cterm16": "0" },
+\    'red': { 'gui': '#ec7063', "cterm": "160", "cterm16": "160" },
+\}
 try
    " set kitten color Adwaita darker
    " colorscheme vividchalk
@@ -111,7 +118,8 @@ try
    " colorscheme retrobox
    " colorscheme github
    " colorscheme molokai
-   colorscheme pencil
+   " colorscheme pencil
+   colorscheme palenight
    " colorscheme solarized8
    " colorscheme badwolf
 catch /^Vim\%((\a\+)\)\=:E185/

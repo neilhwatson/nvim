@@ -254,11 +254,11 @@ let g:fzf_layout = { 'right': '~80%' }
 nmap <silent> <c-k> <Plug>(ale_previous_wrap)
 nmap <silent> <c-j> <Plug>(ale_next_wrap)
 " Window control
-nnoremap <leader>w <C-w>
+" nnoremap <leader>w <C-w>
 
 " clipboard maps
 " yank to system clipboard
-nnoremap <leader>c "+y<CR>
+nnoremap YY "+yy
 " yank buffer to system clipboard
 nnoremap <leader>ca :%y+<CR>
 " paste from system clipboard

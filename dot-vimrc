@@ -259,6 +259,7 @@ nmap <silent> <c-j> <Plug>(ale_next_wrap)
 " clipboard maps
 " yank to system clipboard
 nnoremap YY "+yy
+vnoremap YY "+yy
 " yank buffer to system clipboard
 nnoremap <leader>ca :%y+<CR>
 " paste from system clipboard

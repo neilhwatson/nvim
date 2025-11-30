@@ -147,9 +147,6 @@ iab hms  <c-r>=strftime("%H:%M:%S")<cr>
 "Day-of-week, Month, Day, Year
 iab cdate <c-r>=strftime("%a %b %d %Y")<cr>
 
-" misc abbs
-iab vimmode vim: sw=3 sts=3 tw=78
-
 au BufRead,BufNewFile */journal/*.txt set textwidth=78 spell
 au BufRead,BufNewFile Makefile* set noexpandtab
 "au BufRead,BufNewFile *.py set noexpandtab
@@ -264,6 +261,9 @@ vnoremap YY "+yy
 nnoremap <leader>ca :%y+<CR>
 " paste from system clipboard
 nnoremap <leader>p "+gp
+
+" Dice rolling
+cabbrev rd read !rolldice
 
 " next and previous errors
 noremap <leader>[ :lprevious<CR>

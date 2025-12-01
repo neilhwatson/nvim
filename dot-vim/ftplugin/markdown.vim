@@ -10,15 +10,9 @@ nmap<leader>4 <HOME>I#### <ESC>
 nmap<leader>5 <HOME>I##### <ESC>
 nmap<leader>6 <HOME>I###### <ESC>
 
-imap h1 #
-imap h2 ##
-imap h3 ###
-imap h4 ####
-imap h5 #####
-imap h6 ######
-
 "create html list items
 nmap <leader>l vip :s/^\(.*\)$/1. \1/g<CR><C-C>:noh<CR>
+nmap <leader>* vip :s/^\(.*\)$/* \1/g<CR><C-C>:noh<CR>
 
 setlocal tabstop=4 shiftwidth=4
 setlocal tabstop=4 shiftwidth=4

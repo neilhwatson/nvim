@@ -264,6 +264,7 @@ nnoremap <leader>p "+gp
 
 " Dice rolling
 cabbrev rd read !rolldice
+nnoremap <leader>d :read !rolldice 
 
 " next and previous errors
 noremap <leader>[ :lprevious<CR>

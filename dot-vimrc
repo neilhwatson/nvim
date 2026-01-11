@@ -266,6 +266,9 @@ nnoremap <leader>p "+gp
 cabbrev rd read !rolldice
 nnoremap <leader>d :read !rolldice 
 
+" For RPG writing
+iab wdd What do you do?
+
 " next and previous errors
 noremap <leader>[ :lprevious<CR>
 noremap <leader>] :lnext<CR>

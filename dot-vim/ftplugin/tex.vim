@@ -23,7 +23,7 @@ nmap <leader>i I\item <ESC>
 nmap <leader>l vip :s/^\(.*\)$/\\item \1/g<CR><C-C>:noh<CR>
 
 " Itemize
-nmap <leader>bi I\begin{itemize}<CR>\end{itemize}<ESC}
+nmap <leader>bi I\begin{itemize}<CR>\end{itemize}<ESC>
 
 " verbatim block
 vmap <leader>v "zdO\being{verbatim}<CR><ESC>"zgp<ESC>o\end{verbatim}}<ESC>
